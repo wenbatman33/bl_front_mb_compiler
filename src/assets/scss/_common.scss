@@ -1,0 +1,36 @@
+#app {
+  touch-action: manipulation;
+  margin-bottom: constant(safe-area-inset-bottom);
+  margin-bottom: env(safe-area-inset-bottom);
+  user-select: none;
+}
+
+.fixed__page {
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 100%;
+}
+
+.overlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: black;
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card__open {
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+  opacity: 1 !important;
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  transition-duration: 380ms;
+  transform: translateY(-80vh);
+}
+
+.el-message-box {
+  width: 80%;
+}
